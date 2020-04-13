@@ -1,0 +1,6 @@
+*.pyc
+.DS_Store
+snippets.ipynb
+.ipynb_checkpoints
+*.log
+screenshots

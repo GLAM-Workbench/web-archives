@@ -1,0 +1,5 @@
+requests
+requests-cache
+pandas
+tqdm
+jupyterlab
