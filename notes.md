@@ -30,6 +30,7 @@ Info:
 * [Common Crawl indexes](http://index.commoncrawl.org/) & [all data](https://commoncrawl.org/the-data/get-started/)
 * [Awesome Web Archiving](http://netpreserve.org/web-archiving/tools-and-software/)
 * [Stanford Uni resaecrh resources](https://library.stanford.edu/projects/web-archiving/research-resources/data-formats-and-apis)
+* [Hashes](https://blogs.loc.gov/thesignal/2011/11/hashing-out-digital-trust/?loclr=blogsig)
 
 Tools:
 

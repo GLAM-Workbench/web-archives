@@ -3,4 +3,9 @@
 snippets.ipynb
 .ipynb_checkpoints
 *.log
+*.sqlite
+db.json
 screenshots
+pdfs
+powerpoints
+ppt_images
