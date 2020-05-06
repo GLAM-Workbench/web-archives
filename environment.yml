@@ -4,7 +4,6 @@ channels:
   - defaults
 dependencies:
   - altair=4.1.0
-  - appnope=0.1.0
   - arrow=0.15.5
   - attrs=19.3.0
   - backcall=0.1.0
@@ -55,7 +54,6 @@ dependencies:
   - libcxx=10.0.0
   - libedit=3.1.20170329
   - libffi=3.2.1
-  - libgfortran=4.0.0
   - libiconv=1.15
   - liblapack=3.8.0
   - libllvm9=9.0.1
