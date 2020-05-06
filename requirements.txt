@@ -24,7 +24,6 @@ Genshi==0.7.3
 h11==0.9.0
 html5lib==1.0.1
 htmldate==0.6.2
-git+https://github.com/edsu/htmldiff/tarball/master#egg=htmldiff-0.2
 htmldiffer==0.25.2
 httptools==0.1.1
 hupper==1.10.2
