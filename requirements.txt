@@ -106,7 +106,7 @@ tqdm==4.45.0
 trafilatura==0.4.1
 traitlets==4.3.3
 Unidecode==1.1.1
--e git+https://github.com/wragge/unoconv.git@1a7dee9fd587cd21982e66210c90cf8460e072a0#egg=unoconv
+unoconv==0.9.0
 urllib3==1.25.9
 uvicorn==0.11.3
 uvloop==0.14.0
