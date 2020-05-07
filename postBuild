@@ -1,0 +1,3 @@
+#! /bin/sh
+
+sed -i 's/\#!\/srv\/conda\/envs\/notebook\/bin\/python/\#!\/usr\/bin\/python3/'  /srv/conda/envs/notebook/bin/unoconv
