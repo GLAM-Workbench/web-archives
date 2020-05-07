@@ -23,7 +23,7 @@ Genshi==0.7.3
 h11==0.9.0
 html5lib==1.0.1
 htmldate==0.6.2
-htmldiff==0.2
+-e git+https://github.com/edsu/htmldiff@b3a4d0d9eade7ce7e6487948a631f8b02d6f5c9a#egg=htmldiff
 htmldiffer==0.25.2
 httptools==0.1.1
 hupper==1.10.2
@@ -38,6 +38,7 @@ jedi==0.17.0
 Jinja2==2.10.3
 json5==0.9.0
 jsonschema==3.2.0
+jupyter==1.0.0
 jupyter-client==6.1.3
 jupyter-console==6.1.0
 jupyter-core==4.6.3
@@ -68,13 +69,14 @@ prometheus-client==0.7.1
 prompt-toolkit==3.0.5
 ptyprocess==0.6.0
 pycparser==2.20
+pycryptodome==3.9.7
 Pygments==2.6.1
 PyMuPDF==1.16.18
 pyOpenSSL==19.1.0
 pyparsing==2.4.7
 PyQt5==5.12.3
 PyQt5-sip==4.19.18
-PyQtChart==5.12
+PyQtChart==5.12.0
 PyQtWebEngine==5.12.1
 pyrsistent==0.16.0
 PySocks==1.7.1
@@ -91,6 +93,7 @@ requests-cache==0.5.0
 selenium==3.141.0
 Send2Trash==1.5.0
 six==1.14.0
+sortedcontainers==2.1.0
 soupsieve==1.9.4
 sqlite-utils==2.7
 tabulate==0.8.7
