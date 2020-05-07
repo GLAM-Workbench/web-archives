@@ -7,7 +7,6 @@ beautifulsoup4==4.9.0
 bibtexparser==1.1.0
 bleach==3.1.5
 brotlipy==0.7.0
-certifi==2020.4.5.1
 cffi==1.14.0
 chardet==3.0.4
 click==7.1.1
@@ -24,6 +23,7 @@ Genshi==0.7.3
 h11==0.9.0
 html5lib==1.0.1
 htmldate==0.6.2
+htmldiff==0.2
 htmldiffer==0.25.2
 httptools==0.1.1
 hupper==1.10.2
