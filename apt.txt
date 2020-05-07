@@ -1,5 +1,7 @@
 firefox
-unoconv
+libreoffice
+libreoffice-pyuno
 libreoffice-script-provider-python
+libobasis4.4-pyuno
 uno-libs3
 python3-uno
