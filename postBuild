@@ -3,4 +3,7 @@
 jupyter nbextension     enable --py --sys-prefix appmode
 jupyter serverextension enable --py --sys-prefix appmode
 
+jupyter nbextension install --py jupyter_notebookparams --sys-prefix
+jupyter nbextension enable --py jupyter_notebookparams --sys-prefix
+
 sed -i 's/\#!\/srv\/conda\/envs\/notebook\/bin\/python/\#!\/usr\/bin\/python3/'  /srv/conda/envs/notebook/bin/unoconv
