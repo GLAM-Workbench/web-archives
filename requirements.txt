@@ -100,6 +100,7 @@ QtPy==1.9.0
 readability-lxml==0.7.1
 requests==2.23.0
 requests-cache==0.5.0
+requests-file==1.5.1
 selenium==3.141.0
 Send2Trash==1.5.0
 simpervisor==0.3
@@ -107,10 +108,12 @@ six==1.14.0
 sortedcontainers==2.1.0
 soupsieve==1.9.4
 sqlite-utils==2.7
+surt==0.3.1
 tabulate==0.8.7
 terminado==0.8.3
 testpath==0.4.4
 text-unidecode==1.2
+tldextract==2.2.2
 toolz==0.10.0
 tornado==6.0.4
 tqdm==4.45.0
