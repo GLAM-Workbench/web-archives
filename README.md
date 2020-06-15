@@ -17,3 +17,5 @@ These notebooks are a starting point that I hope will encourage researchers to i
 The development of these notebooks was supported by the International Internet Preservation Consortium's [Discretionary Funding Programme 2019-2020](http://netpreserve.org/projects/), with the participation of the British Library, the National Library of Australia, and the National Library of New Zealand. Thanks all!
 
 For more information on web archives projects, training, technologies, and standards see the [Awesome Web Archiving](https://github.com/iipc/awesome-web-archiving) list.
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3894079.svg)](https://doi.org/10.5281/zenodo.3894079)
