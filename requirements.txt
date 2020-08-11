@@ -21,7 +21,7 @@ click-default-group==1.2.2
 cryptography==2.9.2
 cssselect==1.1.0
 cymem==2.0.3
-datasette==0.40
+datasette==0.46
 datasette-render-images==0.1
 decorator==4.4.2
 defusedxml==0.6.0
