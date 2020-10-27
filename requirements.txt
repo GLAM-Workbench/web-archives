@@ -18,7 +18,7 @@ cffi==1.14.0
 chardet==3.0.4
 click==7.1.1
 click-default-group==1.2.2
-cryptography==2.9.2
+cryptography==3.2
 cssselect==1.1.0
 cymem==2.0.3
 datasette==0.40
