@@ -8,7 +8,7 @@ attrs==19.3.0
 backcall==0.1.0
 beautifulsoup4==4.9.0
 bibtexparser==1.1.0
-bleach==3.1.5
+bleach==3.3.0
 bleach-extras==0.0.3
 blis==0.4.1
 brotlipy==0.7.0
