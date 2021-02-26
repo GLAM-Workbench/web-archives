@@ -1,5 +1,5 @@
 aiofiles==0.4.0
-aiohttp==3.6.2
+aiohttp==3.7.4
 altair==4.1.0
 appmode==0.7.0
 arrow==0.15.5
