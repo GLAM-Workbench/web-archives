@@ -6,3 +6,4 @@ uno-libs3
 python3-uno
 nano
 fonts-liberation
+libgl1-mesa-glx

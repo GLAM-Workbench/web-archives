@@ -1,0 +1,35 @@
+type: install
+name: Web Archives (GLAM Workbench)
+
+settings:
+    fields:
+      - hideLabel: false
+        hidden: false
+        type: string
+        inputType: password
+        required: true
+        caption: Set a password for Jupyter
+        name: jupyterPassword
+
+onInstall:
+    - cmd[cp]: python3 -c "from notebook.auth import passwd; print(passwd('${settings.jupyterPassword}', 'sha1'))"
+    - api:
+        - method: environment.control.SetContainerRunCmd
+          params:
+            nodeId: ${nodes.cp[0].id}
+            data: "jupyter lab --ip 0.0.0.0 --NotebookApp.password='${response.out}' --LabApp.default_url='/lab/tree/index.md'"
+        - method: environment.control.RestartNodes
+          params:
+            nodeGroup: cp
+nodes:
+    nodeGroup: cp
+    cloudlets: 16
+    image: "glamworkbench/web-archives:latest"
+    entrypoint: /usr/local/bin/repo2docker-entrypoint
+    volumes:
+        - /home/jovyan/work
+
+ssl: true
+success: |
+  **Juyter notebook URL**: [https://${env.domain}/](https://${env.domain}/)
+  **Password**: ${settings.jupyterPassword}

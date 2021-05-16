@@ -1,0 +1,42 @@
+name: docker-push
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  Create-Docker-image:
+    runs-on: ubuntu-latest
+    steps:
+    - name: checkout files in repo
+      uses: actions/checkout@v2
+
+    - name: Create index.md from README
+      run: |
+        sed '/^<\!-- START RUN INFO/,/^<\!-- END RUN INFO/d;' README.md > index.md
+
+    - name: Commit index.md
+      uses: EndBug/add-and-commit@v7.1.0
+      with:
+          add: index.md
+
+    - name: update jupyter dependencies with repo2docker
+      uses: jupyterhub/repo2docker-action@master
+      with:
+        DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
+        DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
+        BINDER_CACHE: true
+        PUBLIC_REGISTRY_CHECK: true
+        IMAGE_NAME: glamworkbench/web-archives
+
+    - name: Modify readme for DockerHub
+      run: |
+        sed -i -r 's/\[(.*)\]\(.*\.ipynb\)/\1/' index.md
+
+    - name: Update Docker Hub description
+      uses: peter-evans/dockerhub-description@v2
+      with:
+        username: ${{ secrets.DOCKER_USERNAME }}
+        password: ${{ secrets.DOCKERHUB_PASSWORD }}
+        repository: glamworkbench/web-archives
+        readme-filepath: index.md
