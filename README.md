@@ -1,11 +1,5 @@
 # Working with web archives
 
-See the [web archives section](https://glam-workbench.github.io/web-archives/) of the [GLAM Workbench](https://glam-workbench.github.io/) for more information.
-
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/GLAM-Workbench/web-archives/master?urlpath=lab/tree/index.md)
-
-----
-
 We tend to think of a web archive as a site we go to when links are broken – a useful fallback, rather than a source of new research data. But web archives don't just store old web pages, they capture multiple versions of web resources over time. Using web archives we can observe change – we can ask historical questions. This collection of notebooks is intended to help historians, and other researchers, frame those questions by revealing what sort of data is available, how to get it, and what you can do with it.
 
 Web Archives share systems and standards, making it much easier for researchers wanting to get their hands on useful data. These notebooks focus on four particular web archives: the [UK Web Archive](https://www.webarchive.org.uk/), the [Australian Web Archive](https://trove.nla.gov.au/website) (National Library of Australia ), the [New Zealand Web Archive](https://natlib.govt.nz/collections/a-z/new-zealand-web-archive) (National Library of New Zealand), and the [Internet Archive](https://archive.org/web/). However, the tools and approaches here could be easily extended to other web archives.
@@ -16,32 +10,34 @@ These notebooks are a starting point that I hope will encourage researchers to i
 
 The development of these notebooks was supported by the International Internet Preservation Consortium's [Discretionary Funding Programme 2019-2020](http://netpreserve.org/projects/), with the participation of the British Library, the National Library of Australia, and the National Library of New Zealand. Thanks all!
 
-For more information on web archives projects, training, technologies, and standards see the [Awesome Web Archiving](https://github.com/iipc/awesome-web-archiving) list.
+See the [web archives section](https://glam-workbench.github.io/web-archives/) of the [GLAM Workbench](https://glam-workbench.github.io/) for more information.
 
-## Types of data
+## Notebook topics
+
+### Types of data
 
 * [**Timegates, Timemaps, and Mementos**](memento.ipynb) – explore how the Memento protocol helps you get machine-readable data about web archive captures
 * [**Exploring the Internet Archive's CDX API**](exploring_cdx_api.ipynb) – some web archives provide indexes of the web pages they've archived through an API, this notebook looks in detail at the data provided by the Internet Archive's CDX API
 * [**Comparing CDX APIs**](comparing_cdx_apis.ipynb) – this notebook documents differences between the Internet Archive's Wayback CDX API and the PyWb CDX API (used by AWA and UKWA)
 * [**Timemaps vs CDX APIs**](getting_all_snapshots_timemap_vs_cdx.ipynb) – both Timemaps and CDX APIs can give us a list of captures from a particular web page, this notebook compares the results
 
-## Harvesting data and creating datasets
+### Harvesting data and creating datasets
 
 * [**Get the archived version of a page closest to a particular date**](get_a_memento.ipynb) – the Memento API enables us to get the archived version of a page closest to a particular date, the functions in this notebook smooth out these some variations across repositories
-* [**Find all the archived versions of a web page**](find_all_captures.ipynb) –
-* [**Harvesting collections of text from archived web pages**](getting_text_from_web_pages.ipynb)
-* [**Harvesting data about a domain using the IA CDX API**](harvesting_domain_data.ipynb)
-* [**Find and explore Powerpoint presentations from a specific domain**](explore_presentations.ipynb)
-* [**Exploring subdomains in the whole of gov.au**](harvesting_gov_au_domains.ipynb)
+* [**Find all the archived versions of a web page**](find_all_captures.ipynb) – you can get all the captures of an archived page using either Timemaps or the CDX API, this notebook demonstrates both
+* [**Harvesting collections of text from archived web pages**](getting_text_from_web_pages.ipynb) – create a dataset from the text contents of a single page across time, or multiple pages
+* [**Harvesting data about a domain using the IA CDX API**](harvesting_domain_data.ipynb) – extract information about a whole domain using `prefix` and `domain` queries
+* [**Find and explore Powerpoint presentations from a specific domain**](explore_presentations.ipynb) – a complete workflow from web archive to Powerpoints to PDFS to images and text, and explore it all in Datasette
+* [**Exploring subdomains in the whole of gov.au**](harvesting_gov_au_domains.ipynb) - scale up your harvesting to assemble a complete set of subdomains over time, and visualise the results as a dendrogram
 
-## Exploring change over time
+### Exploring change over time
 
-* [**Compare two versions of an archived web page**](show_diffs.ipynb)
-* [**Observing change in a web page over time**](change_in_a_page_over_time.ipynb)
-* [**Create and compare full page screenshots from archived web pages**](save_screenshot.ipynb)
-* [**Using screenshots to visualise change in a page over time**](screenshots_over_time_using_timemaps.ipynb)
-* [**Display changes in the text of an archived web page over time**](display-text-changes-from-timemap.ipynb)
-* [**Find when a piece of text appears in an archived web page**](find-text-in-page-from-timemap.ipynb)
+* [**Compare two versions of an archived web page**](show_diffs.ipynb) – demonstrates a number of different ways to versions of an archive web page can be compared, from metadata to screenshots
+* [**Observing change in a web page over time**](change_in_a_page_over_time.ipynb) – getting and visualising information about all the captures of a single page over time
+* [**Create and compare full page screenshots from archived web pages**](save_screenshot.ipynb) – generate full page screenshots of archived web pages, compare pages, captures, even repositories
+* [**Using screenshots to visualise change in a page over time**](screenshots_over_time_using_timemaps.ipynb) – create a time series of screenshots, one for each year, compiled into a single image
+* [**Display changes in the text of an archived web page over time**](display-text-changes-from-timemap.ipynb) – work through, capture by capture, showing how the text contents of an archived web page has changed
+* [**Find when a piece of text appears in an archived web page**](find-text-in-page-from-timemap.ipynb) – look for the first or last occurance of text string in an archived web page, or just find every occurance and chart the frequency
 
 <!-- START RUN INFO -->
 
@@ -55,6 +51,8 @@ There are a number of different ways to use these notebooks. Binder is quickest 
 
 Click on the button above to launch the notebooks in this repository using the [Binder](https://mybinder.org/) service (it might take a little while to load). This is a free service, but note that sessions will close if you stop using the notebooks, and no data will be saved. Make sure you download any changed notebooks or harvested data that you want to save.
 
+See the [Using Binder](https://glam-workbench.net/using-binder/) section of the GLAM Workbench for more details.
+
 ### Using Reclaim Cloud
 
 [![Launch on Reclaim Cloud](https://glam-workbench.github.io/images/launch-on-reclaim-cloud.svg)](https://app.my.reclaim.cloud/?manifest=https://raw.githubusercontent.com/GLAM-Workbench/web-archives/master/reclaim-manifest.jps)
@@ -67,7 +65,7 @@ Click on the button above to launch the notebooks in this repository using the [
 * Sit back and wait for the installation to complete!
 * Once the installation is finished click on the 'Open in Browser' button of your newly created environment (note that you might need to wait a few minutes before everything is ready).
 
-See the GLAM Workbench for more details.
+See the [Using Reclaim Cloud](https://glam-workbench.net/using-reclaim-cloud/) section GLAM Workbench [for more details.
 
 ### Using Docker
 
@@ -82,7 +80,7 @@ You can use Docker to run a pre-built computing environment on your own computer
 * It will take a while to download and configure the Docker image. Once it's ready you'll see a message saying that Jupyter Notebook is running.
 * Point your web browser to `http://127.0.0.1:8888`
 
-See the GLAM Workbench for more details.
+See the [Using Docker](https://glam-workbench.net/using-docker/) section of the GLAM Workbench for more details.
 
 ### Setting up on your own computer
 
@@ -90,10 +88,10 @@ If you know your way around the command line and are comfortable installing soft
 
 Assuming you have recent versions of Python and Git installed, the steps might be something like:
 
-* Create a virtual environment, eg: `python -m venv trove-harvester`
-* Open the new directory" `cd trove-harvester`
+* Create a virtual environment, eg: `python -m venv web-archives`
+* Open the new directory" `cd web-archives`
 * Activate the environment `source bin/activate`
-* Clone the repository: `git clone https://github.com/GLAM-Workbench/trove-newspapers.git notebooks`
+* Clone the repository: `git clone https://github.com/GLAM-Workbench/web-archives.git notebooks`
 * Open the new `notebooks` directory: `cd notebooks`
 * Install the necessary Python packages: `pip install -r requirements.txt`
 * Run Jupyter: `jupyter lab`
@@ -102,5 +100,11 @@ See the GLAM Workbench for more details.
 
 <!-- END RUN INFO -->
 
+## Cite as
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3894079.svg)](https://doi.org/10.5281/zenodo.3894079)
+See the GLAM Workbench or [Zenodo](https://doi.org/10.5281/zenodo.3894079) for up-to-date citation details.
+
+----
+
+This repository is part of the [GLAM Workbench](https://glam-workbench.github.io/).  
+If you think this project is worthwhile, you might like [to sponsor me on GitHub](https://github.com/sponsors/wragge?o=esb).
