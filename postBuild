@@ -12,4 +12,4 @@ jupyter labextension install @jupyterlab/server-proxy --no-build
 
 jupyter lab build --minimize=False
 
-#sed -i 's/\#!\/srv\/conda\/envs\/notebook\/bin\/python/\#!\/usr\/bin\/python3/'  /srv/conda/envs/notebook/bin/unoconv
+sed -i 's/\#!\/srv\/conda\/envs\/notebook\/bin\/python/\#!\/usr\/bin\/python3/'  /srv/conda/envs/notebook/bin/unoconv
