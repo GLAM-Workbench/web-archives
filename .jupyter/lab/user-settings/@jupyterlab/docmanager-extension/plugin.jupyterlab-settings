@@ -1,0 +1,19 @@
+{
+    // Document Manager
+    // @jupyterlab/docmanager-extension:plugin
+    // Document Manager settings.
+    // ***************************************
+
+    // Autosave Documents
+    // Whether to autosave documents
+    "autosave": true,
+
+    // Autosave Interval
+    // Length of save interval in seconds
+    "autosaveInterval": 120,
+
+    // Default Viewers
+    // Overrides for the default viewers for file types.
+
+    "defaultViewers": {"markdown": "Markdown Preview"}
+}
