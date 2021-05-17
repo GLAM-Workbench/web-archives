@@ -34,3 +34,4 @@ jupyter-server-proxy
 ete3
 PyQt5
 appmode
+jupyter-archive
