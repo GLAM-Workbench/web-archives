@@ -1,0 +1,6 @@
+{
+  "VoilaConfiguration": {
+    "template": "material",
+    "file_whitelist": [".*"]
+  }
+}
