@@ -138,7 +138,7 @@ typish==1.9.2
 tzlocal==2.1
 unoconv==0.9.0
 url-normalize==1.4.3
-urllib3==1.26.4
+urllib3==1.26.5
 uvicorn==0.13.4
 voila==0.2.10
 voila-material @ git+https://github.com/GLAM-Workbench/voila-material.git@4b5d6d3387656a0d01b14c2ce0107e34f774377a
