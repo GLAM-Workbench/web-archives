@@ -20,6 +20,7 @@ jobs:
       run: |
         python -m pip install -U pip
         python -m pip install jupytext
+        python -m pip install jupyterlab
 
     - name: Convert README to index.ipynb
       run: |
