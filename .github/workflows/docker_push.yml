@@ -24,7 +24,7 @@ jobs:
     - name: Convert README to index.ipynb
       run: |
         sed '/^<\!-- START RUN INFO/,/^<\!-- END RUN INFO/d;' README.md > index.md
-        jupytext --to ipynb index.md
+        jupytext -k python3 --to ipynb index.md
 
     - name: Commit index.ipynb
       uses: EndBug/add-and-commit@v7.1.0
