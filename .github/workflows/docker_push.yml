@@ -11,32 +11,44 @@ jobs:
     - name: checkout files in repo
       uses: actions/checkout@v2
 
-    - name: Create index.md from README
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.8
+
+    - name: Install dependencies
+      run: |
+        python -m pip install -U pip
+        python -m pip install jupytext
+
+    - name: Convert README to index.ipynb
       run: |
         sed '/^<\!-- START RUN INFO/,/^<\!-- END RUN INFO/d;' README.md > index.md
+        jupytext --to ipynb index.md
 
-    - name: Commit index.md
+    - name: Commit index.ipynb
       uses: EndBug/add-and-commit@v7.1.0
       with:
-          add: index.md
+          add: index.ipynb
 
     - name: update jupyter dependencies with repo2docker
       uses: jupyterhub/repo2docker-action@master
       with:
-        DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
-        DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
+        DOCKER_USERNAME: ${{ secrets.QUAY_USERNAME }}
+        DOCKER_PASSWORD: ${{ secrets.QUAY_PASSWORD }}
+        DOCKER_REGISTRY: "quay.io"
         BINDER_CACHE: true
-        PUBLIC_REGISTRY_CHECK: true
         IMAGE_NAME: glamworkbench/web-archives
 
     - name: Modify readme for DockerHub
       run: |
-        sed -i -r 's/\[(.*)\]\(.*\.ipynb\)/\1/' index.md
+        sed -i -r 's/\[(.*)\]\(.*\.ipynb\)/\1/' README.md
 
-    - name: Update Docker Hub description
-      uses: peter-evans/dockerhub-description@v2
+    - name: push README to Quay.io
+      uses: christian-korneck/update-container-description-action@v1
+      env:
+        DOCKER_APIKEY: ${{ secrets.API_KEY__QUAY_IO }}
       with:
-        username: ${{ secrets.DOCKER_USERNAME }}
-        password: ${{ secrets.DOCKERHUB_PASSWORD }}
-        repository: glamworkbench/web-archives
-        readme-filepath: index.md
+        destination_container_repo: quay.io/glamworkbench/web-archives
+        provider: quay
+        readme_file: 'README.md'
