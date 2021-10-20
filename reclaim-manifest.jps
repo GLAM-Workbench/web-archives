@@ -25,7 +25,7 @@ onInstall:
 nodes:
     nodeGroup: cp
     cloudlets: 16
-    image: "glamworkbench/web-archives:latest"
+    image: "quay.io/glamworkbench/web-archives:latest"
     entrypoint: /usr/local/bin/repo2docker-entrypoint
     volumes:
         - /home/jovyan/work

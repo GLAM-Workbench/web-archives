@@ -1,5 +1,7 @@
 # Working with web archives
 
+Current version: [v1.0.0](https://github.com/GLAM-Workbench/web-archives/releases/tag/v1.0.0)
+
 We tend to think of a web archive as a site we go to when links are broken – a useful fallback, rather than a source of new research data. But web archives don't just store old web pages, they capture multiple versions of web resources over time. Using web archives we can observe change – we can ask historical questions. This collection of notebooks is intended to help historians, and other researchers, frame those questions by revealing what sort of data is available, how to get it, and what you can do with it.
 
 Web Archives share systems and standards, making it much easier for researchers wanting to get their hands on useful data. These notebooks focus on four particular web archives: the [UK Web Archive](https://www.webarchive.org.uk/), the [Australian Web Archive](https://trove.nla.gov.au/website) (National Library of Australia ), the [New Zealand Web Archive](https://natlib.govt.nz/collections/a-z/new-zealand-web-archive) (National Library of New Zealand), and the [Internet Archive](https://archive.org/web/). However, the tools and approaches here could be easily extended to other web archives.
@@ -67,6 +69,23 @@ See the [Using Binder](https://glam-workbench.net/using-binder/) section of the 
 
 See the [Using Reclaim Cloud](https://glam-workbench.net/using-reclaim-cloud/) section GLAM Workbench [for more details.
 
+### Using the Nectar Research Cloud
+
+The [Nectar Research Cloud](https://ardc.edu.au/services/nectar-research-cloud/) (part of the Australian Research Data Commons) provides cloud computing services to researchers in Australian and New Zealand universities. Any university-affiliated researcher can log on to Nectar and receive [up to 6 months of free cloud computing time](https://tutorials.rc.nectar.org.au/allocation-management/03-account-and-trial). And if you need more, you can [apply for a specific project allocation](https://tutorials.rc.nectar.org.au/allocation-management/04-allocation-and-projects).
+
+The GLAM Workbench is available in the Nectar Cloud as a pre-configured application. This means you can get it up and going without worrying about the technical infrastructure – just fill in a few details and you're away! To create an instance of this repository in the Nectar Cloud:
+
+* Log in to the [Nectar Dashboard](https://dashboard.rc.nectar.org.au/) using your university credentials.
+* From the Dashboard choose **Applications -> Browse Local**.
+* Enter 'GLAM' in the filter box and hit Enter, you should see the GLAM Workbench application.
+* Click on the GLAM Workbench application's  **Quick Deploy** button.
+* Step through the various [configuration options](https://glam-workbench.net/using-nectar/#setting-up-your-own-glam-workbench-repository). Some options are only available if you have a dedicated project allocation.
+* When asked to select a GLAM Workbench repository, choose 'Web archives' from the dropdown.
+* Complete the configuration and deploy your GLAM Workbench instance.
+* The url to access your instance will be displayed once it's ready. Click on the url!
+
+See [Using Nectar](https://glam-workbench.net/using-nectar/) for more details.
+
 ### Using Docker
 
 You can use Docker to run a pre-built computing environment on your own computer. It will set up everything you need to run the notebooks in this repository. This is free, but requires more technical knowledge – you'll have to install Docker on your computer, and be able to use the command line.
@@ -102,7 +121,7 @@ See the GLAM Workbench for more details.
 
 ## Cite as
 
-See the GLAM Workbench or [Zenodo](https://doi.org/10.5281/zenodo.3894079) for up-to-date citation details.
+See the GLAM Workbench or [Zenodo](https://doi.org/10.5281/zenodo.3894078) for up-to-date citation details.
 
 ----
 
