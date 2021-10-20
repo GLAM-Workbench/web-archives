@@ -36,14 +36,15 @@
     },
     {
       "scheme": "url",
-      "identifier": "https://mybinder.org/v2/zenodo/10.5281/zenodo.3894079/",
-      "relation": "isSourceOf",
+      "identifier": "https://glam-workbench.github.io/",
+      "relation": "isPartOf",
       "resource_type": "other"
     },
     {
-      "scheme": "doi",
-      "identifier": "10.5281/zenodo.3894078",
-      "relation": "isVersionOf"
+      "scheme": "url",
+      "identifier": "https://mybinder.org/v2/zenodo/10.5281/zenodo.3894079/",
+      "relation": "isSourceOf",
+      "resource_type": "other"
     }
   ]
 }
