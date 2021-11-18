@@ -12,8 +12,8 @@ settings:
         name: jupyterPassword
 
 onInstall:
-    - cmd[cp]: python3 -c "from notebook.auth import passwd; print(passwd('${settings.jupyterPassword}', 'sha1'))"
     - cmd[cp]: chown -R jovyan:jovyan /home/jovyan/work
+    - cmd[cp]: python3 -c "from notebook.auth import passwd; print(passwd('${settings.jupyterPassword}', 'sha1'))"
     - api:
         - method: environment.control.SetContainerRunCmd
           params:
