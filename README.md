@@ -1,6 +1,6 @@
 # Working with web archives
 
-Current version: [v1.0.0](https://github.com/GLAM-Workbench/web-archives/releases/tag/v1.0.0)
+Current version: [v1.1.0](https://github.com/GLAM-Workbench/web-archives/releases/tag/v1.1.0)
 
 We tend to think of a web archive as a site we go to when links are broken – a useful fallback, rather than a source of new research data. But web archives don't just store old web pages, they capture multiple versions of web resources over time. Using web archives we can observe change – we can ask historical questions. This collection of notebooks is intended to help historians, and other researchers, frame those questions by revealing what sort of data is available, how to get it, and what you can do with it.
 
