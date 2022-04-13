@@ -3,7 +3,9 @@ on:
   push:
     branches:
       - master
-
+  workflow_dispatch:
+    branches:
+      - master
 jobs:
   Create-Docker-image:
     runs-on: ubuntu-latest
