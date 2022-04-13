@@ -3,4 +3,4 @@ flake8 = [
     "--ignore=E501,W503,E203"
 ]
 [tool.pytest.ini_options]
-addopts = "--ignore-glob=Untitled* --ignore=snippets.ipynb --ignore=newspaper-explorer.ipynb --ignore-glob=App* --ignore-glob=draft* --ignore=appmode-checking.ipynb"
+addopts = "--ignore-glob=Untitled* --ignore-glob=getting-started* --ignore=snippets.ipynb --ignore=newspaper-explorer.ipynb --ignore-glob=App* --ignore-glob=draft* --ignore=appmode-checking.ipynb"
