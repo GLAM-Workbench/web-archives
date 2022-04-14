@@ -34,6 +34,9 @@ jobs:
       with:
           add: index.ipynb
 
+    - name: work around permission issue
+      run: git config --global --add safe.directory /github/workspace
+
     - name: update jupyter dependencies with repo2docker
       uses: jupyterhub/repo2docker-action@master
       with:
