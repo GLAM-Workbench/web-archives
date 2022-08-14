@@ -1,6 +1,6 @@
 #! /bin/sh
 
-jupyter serverextension enable voila --sys-prefix
+#jupyter serverextension enable voila --sys-prefix
 
 # jupyter serverextension enable --py jupyter_archive
 
