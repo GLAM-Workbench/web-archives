@@ -82,7 +82,6 @@ charset-normalizer==2.0.12
     # via
     #   aiohttp
     #   htmldate
-    #   httpx
     #   requests
     #   trafilatura
 click==8.0.4
@@ -152,9 +151,9 @@ htmldate==1.2.1
     # via trafilatura
 htmldiff @ git+https://github.com/edsu/htmldiff@b3a4d0d9eade7ce7e6487948a631f8b02d6f5c9a
     # via -r requirements.in
-httpcore==0.14.7
+httpcore==0.15.0
     # via httpx
-httpx==0.22.0
+httpx==0.23.0
     # via datasette
 hupper==1.10.3
     # via datasette
