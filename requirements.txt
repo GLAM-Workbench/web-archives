@@ -202,7 +202,7 @@ jinja2==3.0.3
     #   jupyterlab-server
     #   nbconvert
     #   notebook
-joblib==1.1.0
+joblib==1.2.0
     # via scikit-learn
 json5==0.9.6
     # via jupyterlab-server
