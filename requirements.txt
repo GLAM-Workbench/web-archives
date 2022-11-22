@@ -340,7 +340,7 @@ pexpect==4.8.0
     # via ipython
 pickleshare==0.7.5
     # via ipython
-pillow==9.1.0
+pillow==9.3.0
     # via -r requirements.in
 pint==0.19
     # via datasette
