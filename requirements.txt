@@ -65,7 +65,7 @@ bleach==4.1.0
     # via nbconvert
 cattrs==1.10.0
     # via requests-cache
-certifi==2021.10.8
+certifi==2022.12.7
     # via
     #   httpcore
     #   httpx
