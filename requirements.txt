@@ -97,7 +97,7 @@ click-default-group==1.2.2
     #   sqlite-utils
 courlan==0.7.1
     # via trafilatura
-cryptography==36.0.2
+cryptography==39.0.1
     # via
     #   pyopenssl
     #   urllib3
