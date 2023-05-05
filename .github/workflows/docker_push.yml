@@ -3,20 +3,18 @@ on:
   push:
     branches:
       - master
-  workflow_dispatch:
-    branches:
-      - master
+
 jobs:
   Create-Docker-image:
     runs-on: ubuntu-latest
     steps:
     - name: checkout files in repo
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
 
     - name: Set up Python
-      uses: actions/setup-python@v2
+      uses: actions/setup-python@v4
       with:
-        python-version: 3.8
+        python-version: "3.8"
 
     - name: Install dependencies
       run: |
@@ -30,21 +28,18 @@ jobs:
         jupytext -k python3 --to ipynb index.md
 
     - name: Commit index.ipynb
-      uses: EndBug/add-and-commit@v7.1.0
+      uses: EndBug/add-and-commit@v9
       with:
           add: index.ipynb
 
-    - name: work around permission issue
-      run: git config --global --add safe.directory /github/workspace
-
     - name: update jupyter dependencies with repo2docker
-      uses: jupyterhub/repo2docker-action@master
+      uses: wragge/repo2docker-action@master
       with:
         DOCKER_USERNAME: ${{ secrets.QUAY_USERNAME }}
         DOCKER_PASSWORD: ${{ secrets.QUAY_PASSWORD }}
         DOCKER_REGISTRY: "quay.io"
         BINDER_CACHE: true
-        IMAGE_NAME: glamworkbench/web-archives
+        IMAGE_NAME: glamworkbench/${{ github.event.repository.name }}
 
     - name: Modify readme for DockerHub
       run: |
@@ -55,6 +50,7 @@ jobs:
       env:
         DOCKER_APIKEY: ${{ secrets.API_KEY__QUAY_IO }}
       with:
-        destination_container_repo: quay.io/glamworkbench/web-archives
+        destination_container_repo: quay.io/glamworkbench/${{ github.event.repository.name }}
         provider: quay
         readme_file: 'README.md'
+
