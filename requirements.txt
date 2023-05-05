@@ -11,7 +11,9 @@ aiohttp==3.8.1
 aiosignal==1.2.0
     # via aiohttp
 altair==4.2.0
-    # via -r requirements.in
+    # via
+    #   -r requirements.in
+    #   vegafusion
 anyio==3.5.0
     # via
     #   httpcore
@@ -232,6 +234,7 @@ jupyter-core==4.9.2
     #   notebook
 jupyter-server==1.16.0
     # via
+    #   -r requirements.in
     #   jupyter-archive
     #   jupyter-server-proxy
     #   jupyterlab
@@ -317,6 +320,7 @@ numpy==1.22.3
     #   -r requirements.in
     #   altair
     #   pandas
+    #   pyarrow
     #   scikit-learn
     #   scipy
 outcome==1.1.0
@@ -332,6 +336,7 @@ pandas==1.4.2
     # via
     #   -r requirements.in
     #   altair
+    #   vegafusion
 pandocfilters==1.5.0
     # via nbconvert
 parso==0.8.3
@@ -353,13 +358,17 @@ prometheus-client==0.13.1
 prompt-toolkit==3.0.29
     # via ipython
 psutil==5.9.0
-    # via ipykernel
+    # via
+    #   ipykernel
+    #   vegafusion
 ptyprocess==0.7.0
     # via
     #   pexpect
     #   terminado
 pure-eval==0.2.2
     # via stack-data
+pyarrow==12.0.0
+    # via vegafusion
 pycparser==2.21
     # via cffi
 pygments==2.11.2
@@ -541,6 +550,12 @@ urllib3[secure,socks]==1.26.9
     #   trafilatura
 uvicorn==0.17.6
     # via datasette
+vegafusion[embed]==1.2.3
+    # via -r requirements.in
+vegafusion-python-embed==1.2.3
+    # via vegafusion
+vl-convert-python==0.9.0
+    # via vegafusion
 voila==0.3.5
     # via
     #   -r requirements.in
