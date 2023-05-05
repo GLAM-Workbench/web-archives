@@ -1,4 +1,6 @@
 jupyterlab
+# To deal with https://github.com/jupyter-server/jupyter_server/issues/1038
+jupyter-server<2.0.0
 voila
 voila-material @ git+https://github.com/GLAM-Workbench/voila-material.git
 beautifulsoup4
