@@ -234,6 +234,7 @@ jupyter-core==4.9.2
     #   notebook
 jupyter-server==1.16.0
     # via
+    #   -r requirements.in
     #   jupyter-archive
     #   jupyter-server-proxy
     #   jupyterlab
