@@ -34,3 +34,4 @@ ete3
 PyQt5
 jupyter-archive
 python-dotenv
+vegafusion[embed]
